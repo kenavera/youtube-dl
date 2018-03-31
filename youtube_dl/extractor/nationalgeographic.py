@@ -68,7 +68,7 @@ class NationalGeographicVideoIE(InfoExtractor):
 
 class NationalGeographicIE(ThePlatformIE, AdobePassIE):
     IE_NAME = 'natgeo'
-    _VALID_URL = r'https?://channel\.nationalgeographic\.com/(?:(?:wild/)?[^/]+/)?(?:videos|episodes)/(?P<id>[^/?]+)'
+    _VALID_URL = r'https?://channel\.nationalgeographic\.com/(?:(?:(?:wild/)?[^/]+/)?(?:videos|episodes)|u)/(?P<id>[^/?]+)'
 
     _TESTS = [
         {
